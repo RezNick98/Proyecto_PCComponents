@@ -1,12 +1,31 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    display: flex;
+}
+a::first-letter{
+    text-transform: capitalize;
+}
 header{
     display: flex;
     align-items: center;
-    border: solid black;
+    justify-content: space-between;
+    border: solid;
+
 }
 
-img{
-    height: 25%;
-    width: 25%;
-    padding-right:4em;
+#img_index{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
+img{
+    width: 200px;
+    height: 200px;
+}
+a{
+    margin: 10px;
+}
+
 
