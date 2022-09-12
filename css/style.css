@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    align-items: center;
+    border: solid black;
+}
+
+img{
+    height: 25%;
+    width: 25%;
+    padding-right:4em;
+}
+
