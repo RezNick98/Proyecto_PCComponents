@@ -1,7 +1,9 @@
 
 
 
+@media only screen and (min-width:600px){
 
+}
 
 
 @media only screen and (min-width:1200px){
@@ -10,16 +12,22 @@
     }
     nav{
         display: flex;
+        margin: 10px;
+        padding: 10px;
     }
     a::first-letter{
         text-transform: capitalize;
+    }
+    a{
+        padding: 10px;
+    }
+    a:hover{
+        background-color: red;
     }
     header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
-    
     }
     
     #img_index{
@@ -31,28 +39,37 @@
         width: 200px;
         height: 200px;
     }
-    a{
-        margin: 10px;
+    .form{
+        display: none;
     }
-}
-.form{
-    display: none;
-}
-.cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:10px;
-    background-color: aqua;
-}
-.card{
-    display: flex;
-    justify-content: center;
-    border: solid;
-    width: 50em;
-}
-.mostrarFormulario{
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:10px;
+        height: 10em;
+        background-color: aqua;
+    }
+    .card{
+        display: block;
+        background-color: #4CAF50;
+        align-items: center;
+        color: white;
+        border: solid 1px green;
+        text-align: center;
+        padding: 15px 32px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .card p{
+        border-bottom: none;
+    }
+    .card p:hover{
+        background-color: red;
+    }
+    .mostrarFormulario{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    }
 }
