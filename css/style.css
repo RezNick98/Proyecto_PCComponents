@@ -1,31 +1,39 @@
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-nav{
-    display: flex;
-}
-a::first-letter{
-    text-transform: capitalize;
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: solid;
 
-}
 
-#img_index{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-}
-img{
-    width: 200px;
-    height: 200px;
-}
-a{
-    margin: 10px;
+
+
+
+
+@media only screen and (min-width:1200px){
+    *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    nav{
+        display: flex;
+    }
+    a::first-letter{
+        text-transform: capitalize;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    
+    }
+    
+    #img_index{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    a{
+        margin: 10px;
+    }
 }
 
 
