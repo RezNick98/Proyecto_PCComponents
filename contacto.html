@@ -28,11 +28,20 @@
                 <p id="mensaje">Envianos un mensaje</button></p>
             </div>
         </section>
-        <form action="" class="form">
-            <label for="">Nombre</label> <input type="text">
-            <label for="Email">Email</label> <input type="email" name="" id="">
-            <label for="">Consulta</label> <textarea name="" id="" cols="50" rows="15"></textarea>
-            <button id="send">Enviar consulta</button>
+        <form action="">
+            <fieldset class="form">
+                <legend>Formulario de contacto</legend>
+                <label for="">Nombre</label> <input type="text">
+                <label for="Email">Email</label> <input type="email" name="" id="">
+                <label for="">Consulta</label> <textarea name="" id="" cols="50" rows="15"></textarea>
+                <label for="Captcha">Cuanto es
+                    <p id="number1"></p>
+                    <p id="number2"></p>
+                    <input type="number" name="" id="result">
+                </label> 
+                <button id="send">Enviar consulta</button>
+                <p id="send_status"></p>
+            </fieldset>
         </form>
     </main>
     <footer>

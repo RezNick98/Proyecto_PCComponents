@@ -61,9 +61,6 @@
         cursor: pointer;
         text-decoration: none;
     }
-    .card p{
-        border-bottom: none;
-    }
     .card p:hover{
         background-color: red;
     }
