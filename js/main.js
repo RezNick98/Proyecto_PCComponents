@@ -4,7 +4,7 @@ let number2=document.querySelector("#number2").innerHTML=Math.floor(Math.random(
 let resultado=number1+number2;
 document.querySelector("#send").addEventListener("click",enviarForm);
 document.querySelector('#mensaje').addEventListener('click',()=>{
-    let elem = document.querySelector('.form')
+    let elem = document.querySelector('.card-form')
     elem.classList.toggle("mostrarFormulario")
 })
 function enviarForm(){
