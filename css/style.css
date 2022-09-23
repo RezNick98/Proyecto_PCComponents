@@ -10,10 +10,14 @@
     *{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    body{
+        background-color: #EF7B00;
+    }
     nav{
         display: flex;
         margin: 10px;
         padding: 10px;
+        background-color: #5C4FE2;
     }
     a::first-letter{
         text-transform: capitalize;
@@ -30,16 +34,16 @@
         justify-content: space-between;
     }
     
-    #img_index{
+    img, #img_index{
         width: 200px;
         height: 200px;
         margin: 10px;
     }
-    img{
-        width: 200px;
-        height: 200px;
-    }
+
     .card-form{
+        display: none;
+    }
+    .card-icons{
         display: none;
     }
     .cards{
@@ -69,6 +73,13 @@
         flex-direction: column;
         align-items:center ;
     }
+    .mostarRedes{
+        display: flex;
+        justify-content:space-evenly;
+    }
+    i{
+        cursor: pointer;
+    }
     footer{
         position: relative;
         bottom: 0;
@@ -85,7 +96,7 @@
     .product{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items:center;
         
     }
     #title{
@@ -93,11 +104,10 @@
         padding-left: 5em;
     }
     .card-product{
-        display: grid;
-        width: 800px;
-        grid-template-columns: repeat(4,auto);
-        grid-gap: 10px;
-        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
+
 
 }

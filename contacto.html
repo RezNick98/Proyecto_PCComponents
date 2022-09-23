@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
@@ -29,14 +29,15 @@
             </div>
         </section>
         <div class="card-icons">
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-instagram fa-10x"></i>
+            <i class="fa-brands fa-facebook-f fa-10x"></i>
             
         </div>
         <form action="">
             <fieldset class="card-form">
                 <legend>Formulario de contacto</legend>
-                <label for="">Nombre</label> <input type="text">
-                <label for="Email">Email</label> <input type="email" name="" id="">
+                <label for="">Nombre</label> <input  id="name" type="text" >
+                <label for="Email">Email</label> <input type="email" name="" id="email" >
                 <label for="">Consulta</label> <textarea name="" id="" cols="50" rows="15"></textarea>
                 <label for="Captcha" id="Captcha">Cuanto es
                     <span id="number1"></span>
@@ -44,7 +45,7 @@
                     <span id="number2"></span>
                     <input type="number" name="" id="result">
                 </label> 
-                <button id="send">Enviar consulta</button>
+                <button id="send" type="submit">Enviar consulta</button>
                 <p id="send_status"></p>
             </fieldset>
         </form>
