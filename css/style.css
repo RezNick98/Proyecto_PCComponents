@@ -77,6 +77,17 @@
         height: 50px;
         width: 100%;
 
+    }h1,#subtitle{
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
     }
-
+    .product{
+        border: solid;
+        padding-left: 30rem;
+    }
+    #title{
+        display: inline;
+        padding-left: 5em;
+    }
 }
