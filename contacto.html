@@ -10,10 +10,9 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="images/componentes-hardware-pc-simbolos-items-computadora-procesador-servidor-ssd-o-hdd-memoria-ram-iconos-linea_80590-5893.jpg" alt="" >
-        </a>
-        <nav>
+        <a href="index.html"><img id="img_index"src="images/componentes-hardware-pc-simbolos-items-computadora-procesador-servidor-ssd-o-hdd-memoria-ram-iconos-linea_80590-5893.jpg" alt="" ></a>        <button id="menu">menu</button>
+        <nav id="nav">
+            <a href="index.html" id="home">home</a>
             <a href="productos.html">productos</a>
             <a>contacto</a>
             <a href="productos_armado.html">productos armados</a>
@@ -36,8 +35,9 @@
         <form action="">
             <fieldset class="card-form">
                 <legend>Formulario de contacto</legend>
-                <label for="">Nombre</label> <input  id="name" type="text" >
-                <label for="Email">Email</label> <input type="email" name="" id="email" >
+                <p id="help">Los * son campos necesarios</p>
+                <label for="">Nombre *</label> <input  id="name" type="text" >
+                <label for="Email">Email *</label> <input type="email" name="" id="email" >
                 <label for="">Consulta</label> <textarea name="" id="" cols="50" rows="15"></textarea>
                 <label for="Captcha" id="Captcha">Cuanto es
                     <span id="number1"></span>
@@ -55,6 +55,7 @@
 
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <script src="https://kit.fontawesome.com/f4382aae54.js" crossorigin="anonymous"></script>
 </body>
 </html>
