@@ -7,15 +7,28 @@ body{
 nav{
     display: none;
 }
+#img_principal{
+    display: none;
+}
+#index_600{
+    display: none;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+header{
+display: block;
+}
 #menu{
-    display: block;
-    justify-content: center;
-    margin-left: 45%;
+    display: inl;
+    cursor: pointer;
 }
 .mostrarMenu{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 a::first-letter{
     text-transform: capitalize;
@@ -26,28 +39,11 @@ a{
 a:hover{
     background-color: red;
 }
-header{
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-}
-#img_index{
-    display: none;
-}
-img{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-}
-
 .card-form{
     display: none;
 }
 .card-icons{
     display: none;
-}
-#menu{
-    cursor: pointer;
 }
 .cards{
     display: flex;
@@ -111,115 +107,6 @@ footer{
     font-weight: bolder;
     font-size: large;
 }
-
-@media only screen and (min-width:600px){
-    *{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    body{
-        background-color: #EF7B00;
-    }
-    nav{
-        display: flex;
-        margin: 10px;
-        padding: 10px;
-        background-color: #5C4FE2;
-    }
-    a::first-letter{
-        text-transform: capitalize;
-    }
-    a{
-        padding: 10px;
-    }
-    a:hover{
-        background-color: red;
-    }
-    header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    img, #img_index{
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-    }
-
-    .card-form{
-        display: none;
-    }
-    .card-icons{
-        display: none;
-    }
-    .cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding:10px;
-        height: 10em;
-        background-color: aqua;
-    }
-    .card{
-        display: block;
-        background-color: #4CAF50;
-        align-items: center;
-        color: white;
-        border: solid 1px green;
-        text-align: center;
-        padding: 15px 32px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .card p:hover{
-        background-color: red;
-    }
-    .mostrarFormulario{
-        display: flex;
-        flex-direction: column;
-        align-items:center ;
-    }
-    .mostarRedes{
-        display: flex;
-        justify-content:space-evenly;
-    }
-    i{
-        cursor: pointer;
-    }
-    footer{
-        position: relative;
-        bottom: 0;
-        text-align: center;
-        background: rgba(30, 60, 40, 0.4);
-        height: 50px;
-        width: 100%;
-
-    }h1,#subtitle{
-        text-transform: uppercase;
-        display: block;
-        text-align: center;
-    }
-    .product{
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-        
-    }
-    #title{
-        display: inline;
-        padding-left: 5em;
-    }
-    .card-product{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    #help{
-        font-weight: bolder;
-        font-size: large;
-    }
-
-}
 @media only screen and (min-width:1200px){
     *{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -227,10 +114,19 @@ footer{
     body{
         background-color: #EF7B00;
     }
+    #index_600{
+        display: block;
+    }
+    #img_index{
+        display: block;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
     nav{
         display: flex;
-        margin: 10px;
-        padding: 10px;
         background-color: #5C4FE2;
     }
     #menu{
@@ -249,19 +145,10 @@ footer{
         background-color: red;
     }
     header{
-        display: flex;
+        display: flex;  
         align-items: center;
         justify-content: space-between;
     }
-    #img_index{
-        display: flex;
-    }
-    img{
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-    }
-
     .card-form{
         display: none;
     }
@@ -309,8 +196,11 @@ footer{
         background: rgba(30, 60, 40, 0.4);
         height: 50px;
         width: 100%;
-
-    }h1,#subtitle{
+    }
+    h1{
+        padding-left: 4em;
+    }
+    h1,#subtitle{
         text-transform: uppercase;
         display: block;
         text-align: center;
