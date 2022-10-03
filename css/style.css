@@ -2,7 +2,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color: #EF7B00;
+    background-color: #fff;
 }
 nav{
     display: none;
@@ -22,13 +22,12 @@ header{
 display: block;
 }
 #menu{
-    display: inl;
+    display: inline;
     cursor: pointer;
 }
 .mostrarMenu{
     display: flex;
     flex-direction: column;
-
 }
 a::first-letter{
     text-transform: capitalize;
@@ -56,12 +55,9 @@ a:hover{
 .card{
     display: block;
     background-color: #4CAF50;
-    align-items: center;
     color: white;
     border: solid 1px green;
     text-align: center;
-    padding: 15px 32px;
-    cursor: pointer;
     text-decoration: none;
 }
 .card p:hover{
@@ -70,7 +66,7 @@ a:hover{
 .mostrarFormulario{
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center;
 }
 .mostarRedes{
     display: flex;
@@ -103,21 +99,22 @@ footer{
     justify-content: space-between;
     width: 100%;
 }
-#help{
+#information{
     font-weight: bolder;
     font-size: large;
+    text-transform: uppercase;
 }
 @media only screen and (min-width:1200px){
     *{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     body{
-        background-color: #EF7B00;
+        background-color: #fff;
     }
     #index_600{
         display: block;
     }
-    #img_index{
+    #img_principal{
         display: block;
     }
     img{
@@ -167,20 +164,29 @@ footer{
         display: block;
         background-color: #4CAF50;
         align-items: center;
+        cursor: pointer;
         color: white;
         border: solid 1px green;
-        text-align: center;
         padding: 15px 32px;
-        cursor: pointer;
         text-decoration: none;
     }
     .card p:hover{
         background-color: red;
     }
+    #consulta{
+        display: flex;
+        height: 200px;
+    }
+    fieldset{
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
     .mostrarFormulario{
         display: flex;
-        flex-direction: column;
-        align-items:center ;
+        flex-wrap: wrap;
+        margin: 15px;
+        padding: 15px;
     }
     .mostarRedes{
         display: flex;
@@ -196,9 +202,6 @@ footer{
         background: rgba(30, 60, 40, 0.4);
         height: 50px;
         width: 100%;
-    }
-    h1{
-        padding-left: 4em;
     }
     h1,#subtitle{
         text-transform: uppercase;
@@ -220,9 +223,30 @@ footer{
         justify-content: space-between;
         width: 100%;
     }
-    #help{
+    #information{
         font-weight: bolder;
         font-size: large;
+        text-transform: uppercase;
+    }
+    .pacman{
+        position: absolute;
+        border: solid yellow 50px;
+        border-radius: 50%;
+        border-color: yellow transparent yellow yellow;
+      }
+      @keyframes pacman1 {
+        0%{transform: rotateZ(10deg);}
+        100%{transform: rotateZ(45deg);}
+      }
+      @keyframes pacman2{
+        0%{ transform: rotateZ(10deg); }
+      100%{ transform: rotateZ(-45deg); }
     }
 
+    .pacman1{
+        animation: pacman1 .3s infinite alternate linear;
+    }
+    .pacman2{
+        animation: pacman2 .3s infinite alternate linear;
+    }
 }
