@@ -14,7 +14,7 @@ document.querySelector("#send").addEventListener("click",()=>{
     }
     let name = document.getElementById('name');
     let email = document.getElementById('email')
-    if(!name.value && !email.value){
+    if(name.value=="" || email.value==""){
         document.querySelector('#send_status').innerHTML="Rellene los campos necesarios"
     }
 })
