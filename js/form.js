@@ -1,6 +1,7 @@
 document.querySelector('#mensaje').addEventListener('click',mostrarForm);
 document.querySelector('#redes').addEventListener('click',mostrarRedes);
 document.querySelector("#menu").addEventListener("click",mostrarMenu)
+document.querySelector('#coments').addEventListener('click',mostrarComentarios)
 let number1=document.querySelector("#number1").innerHTML=Math.floor(Math.random()*6);
 let number2=document.querySelector("#number2").innerHTML=Math.floor(Math.random()*6);
 let resultado=number1+number2;
@@ -27,10 +28,11 @@ function mostrarForm(){
 function mostrarRedes(){
     let elem=document.querySelector('.card-form');
     let icons = document.querySelector('.card-icons');
+    let coments = document.querySelector('.card_coments');
     icons.classList.toggle('mostarRedes');
     elem.classList.remove('mostrarFormulario')
 }
-document.querySelector('#coments').addEventListener('click',async ()=>{
+async function mostrarComentarios(){
     let container = document.querySelector('.card_coments');
     let url = 'https://634f6c1cdf22c2af7b50ffc3.mockapi.io/api/comentarios'
     try{
@@ -46,7 +48,7 @@ document.querySelector('#coments').addEventListener('click',async ()=>{
         console.log(error)
 
     }
-})
+}
 document.querySelector("#menu").addEventListener("click",mostrarMenu)
 function mostrarMenu(){
     let nav = document.querySelector("#nav");

@@ -325,6 +325,9 @@ footer{
         display: block;
         text-align: center;
     }
+    .mostrarComentarios{
+        display: none;
+    }
     .product{
     display: flex;
     flex-direction: column;
