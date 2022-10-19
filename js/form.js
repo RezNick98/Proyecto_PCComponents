@@ -30,3 +30,25 @@ function mostrarRedes(){
     icons.classList.toggle('mostarRedes');
     elem.classList.remove('mostrarFormulario')
 }
+document.querySelector('#coments').addEventListener('click',async ()=>{
+    let container = document.querySelector('.card_coments');
+    let url = 'https://634f6c1cdf22c2af7b50ffc3.mockapi.io/api/comentarios'
+    try{
+        let response = await fetch(url);
+        let json = await response.json();
+        for(const c of json){
+            let coment = c.coments
+            let usuario = c.name
+            container.innerHTML += `<p> ${usuario}: ${coment}</p>`
+        }
+        console.log(json)
+    }catch(error){
+        console.log(error)
+
+    }
+})
+document.querySelector("#menu").addEventListener("click",mostrarMenu)
+function mostrarMenu(){
+    let nav = document.querySelector("#nav");
+    nav.classList.toggle("mostrarMenu");
+}
