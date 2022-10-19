@@ -7,6 +7,9 @@ body{
 nav{
     display: none;
 }
+img{
+    width: 100px;
+}
 #img_principal{
     display: none;
     width: 200px;
@@ -276,7 +279,8 @@ footer{
         padding:10px;
         height: 10em;
         background-color: aqua;
-    }
+    }   
+
     .card{
         display: block;
         background-color: #4CAF50;

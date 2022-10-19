@@ -19,6 +19,12 @@ document.querySelector("#send").addEventListener("click",()=>{
         document.querySelector('#send_status').innerHTML="Rellene los campos necesarios"
     }
 })
+document.querySelector("#menu").addEventListener("click",mostrarMenu)
+function mostrarMenu(){
+    let nav = document.querySelector("#nav");
+    nav.classList.toggle("mostrarMenu");
+}
+
 function mostrarForm(){
     let icons=document.querySelector('.card-icons')
     let elem = document.querySelector('.card-form')
@@ -48,9 +54,4 @@ async function mostrarComentarios(){
         console.log(error)
 
     }
-}
-document.querySelector("#menu").addEventListener("click",mostrarMenu)
-function mostrarMenu(){
-    let nav = document.querySelector("#nav");
-    nav.classList.toggle("mostrarMenu");
 }
